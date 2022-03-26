@@ -6,6 +6,7 @@ const Shoes = () => {
 
     const [shoes, shoesState] = useState([]);
     const [cart, setCart] = useState([]);
+    
 
     useEffect( () => {
         fetch('shoes.json')
