@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import './shoe.css'
 
-const Shoe = (props) => {
+const Shoe = ({shoe,addToCart}) => {
     // console.log(props);
 
-    const {category,img,name,price,ratings} = props.shoe;
+    const {category,img,name,price,ratings} = shoe;
 
     return (
         <div className='mt-5'>
@@ -20,7 +20,7 @@ const Shoe = (props) => {
               Category: {category} <br />
               Ratings: {ratings}
              </h4>
-             <a href="#" className='btn btn-warning d-flex align-items-center'><p className='text'>Add to cart</p> <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon></a>
+             <a href='#' onClick={ () => addToCart(shoe)} className='btn btn-warning d-flex align-items-center'><p className='text'>Add to cart</p> <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon></a>
 
              </div>
             </div>
