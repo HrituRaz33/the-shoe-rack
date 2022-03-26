@@ -7,10 +7,6 @@ const Shoes = () => {
     const [shoes, shoesState] = useState([]);
     const [cart, setCart] = useState([]);
     
-    
-
-    
-
     const chooseForMe = (show) =>{
         for(let i=0; i<cart.length; i++){
             var show = [cart[Math.floor(Math.random()*cart.length)]];
