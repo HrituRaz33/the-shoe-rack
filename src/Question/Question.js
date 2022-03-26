@@ -43,11 +43,7 @@ const Question = () => {
     
     <div class="card-body">
       <h5 class="card-title">How use state works?</h5>
-      <p class="card-text">A functional component can have many calls to useState or other Hooks. Each Hook is stored in a list, and there’s a variable that keeps track of the currently executed Hook.
-
-When useState is executed, the state of the current Hook is read (or initialized during the first render), and then, the variable is changed to point to the next Hook.
-
-That’s why it is important to always maintain the Hook calls in the same order, otherwise, a value belonging to another state variable could be returned.</p>
+      <p class="card-text">The useState() is a Hook that allows you to have state variables in functional components. React has two types of components, one is class components which are ES6 classes that extend from React and the other is functional components. Class components a Component and can have state and lifecycle methods: class Message extends React. The useState hook is a special function that takes the initial state as an argument and returns an array of two entries. </p>
     </div>
   </div>
 </div>
